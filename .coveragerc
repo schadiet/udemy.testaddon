@@ -1,0 +1,6 @@
+[report]
+include =
+    src/udemy/*
+omit =
+    */test*
+    */upgrades/*

@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="udemy.testaddon">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="youtube"
+    for="*"
+    class=".youtube.Youtube"
+    template="youtube.pt"
+    permission="zope2.View"
+    />
+
+
+</configure>

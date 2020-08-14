@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="udemy.testaddon"
+      metal:use-macro="context/main_template/macros/master">
+<body>
+  <metal:block fill-slot="content-core">
+    <iframe id="ytplayer" type="text/html" width="640" height="360" 
+            src="" tal:attributes="src view/youtubelink"  frameborder="0"
+            allowfullscreen></iframe>
+   <!--<p tal:content="view/context/ytid"></p>-->
+  </metal:block>
+</body>
+</html>
